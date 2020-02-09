@@ -7,17 +7,17 @@
   <script src="https://kit.fontawesome.com/1eaa26d749.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:400,600,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body id="index-page">
   <header>
-    <div>
-      <img src="img/sophia-chia-logo.svg" alt="Sophia-Chia-logo">
+    <div class="container">
+      <img class="logo" src="img/sophia-chia-logo.svg" alt="Sophia-Chia-logo">
       <nav>
-        <ul>
+        <ul class="nav">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -28,10 +28,14 @@
   <main>
     <div id="hero">
       <!--open section block for hero-->
-      <div class="">
+      <div class="container hero">
         <!--open container within section block-->
-        <h1>Hi, I'm Sophia. <span>I'm a UX designer based in Düsseldorf, Germany.</span></h1>
-        <p>I love to understand & learn about people and I never want to stop creating.</p>
+        <div class="block1">
+        </div>
+        <h1>Hi, I'm Sophia. <span>I'm a UX designer based in Berlin, Germany.</span></h1>
+        <p class="hero-text">I like to understand people and create things.</p>
+        <div class="block2">
+        </div>
       </div>
       <!--close section block for hero-->
     </div>
@@ -39,44 +43,52 @@
 
     <div id="work">
       <!--open section block for my work-->
-      <div class="">
+      <div class="container work">
         <!--open container within section block-->
-        <h2>My Work</h2>
+        <h2>MY WORK</h2>
+        <div class="block3">
+
+        </div>
         <div class="">
           <!-- open row that holds (2) columns for project 1-->
-          <div class="">
+          <div class="column1">
             <!-- open first column (used for image) -->
             <picture>
               <source srcset="img/Homepage/HUNTE@1x.png" media="(max-width:767px)">
-              <img src="img/Homepage/HUNTE@2x.png" alt="My Image">
+              <img class="workimage1" src="img/Homepage/HUNTE@2x.png" alt="My Image">
             </picture>
           </div><!-- end first column -->
-          <div class="">
+          <div class="column2">
             <!-- open second column (used for text) -->
-            <h3>HUNTE</h3>
-            <p>A social scavenger hunt app for meeting friends through quirky city adventures.</p>
+            <h3 class="worktitle">HUNTE</h3>
+            <p>A social scavenger hunt app for meeting friends through city adventures.</p>
 
             <a href="hunte.html" class="button">Read more</a>
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for project 1-->
+              <div class="block3">
 
+              </div>
         <div class="">
           <!-- open row that holds (2) columns for project 2 -->
-          <div class="">
+          <div class="column3">
             <!-- open first column (used for image) -->
             <picture>
               <source srcset="img/Homepage/Deutlich@1x.png" media="(max-width:767px)">
-              <img src="img/Homepage/Deutlich@2x.png" alt="My Image">
+              <img class="workimage2" src="img/Homepage/Deutlich@2x.png" alt="My Image">
             </picture>
           </div><!-- end first column -->
-          <div class="">
+          <div class="column4">
             <!-- open second column (used for text) -->
-            <h3>Deutlich</h3>
-            <p>A language learning app that helps people learn German words by reading news that interest them.</p>
+            <h3 class="worktitle">Deutlich</h3>
+            <p>An app for learning German words by reading the news.</p>
 
-            <a href="#">Read more</a>
+            <a href="#" class="button">Read more</a>
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for project 2 -->
+        <div class="block3">
+
+        </div>
       </div>
       <!--close container within section block-->
     </div>
@@ -87,12 +99,15 @@
 
   <footer>
     <div id="contact">
-      <h2>Get in touch</h2>
-      <p>I am open for exchange, collaboration or new project opportunities.</p>
-      <div class="">
-        <a href="mailto:soap1069@gmail.com" class="button contact">Talk to me</a>
+      <div class="block4">
+
       </div>
-      <div class="">
+      <h2>GET IN TOUCH</h2>
+      <p class="contactdescript">I am open for exchange, collaboration or new project opportunities.</p>
+      <div class="container">
+        <a href="mailto:soap1069@gmail.com" id="contact" class="button">Talk to me</a>
+      </div>
+      <div class="socialmedia">
         <ul>
           <li><a href="https://www.linkedin.com/in/sophia-chia/"><i class="fab fa-linkedin"></i></a></li>
           <li><a href="https://www.behance.net/soap10691b27"><i class="fab fa-behance-square"></i></a></li>
@@ -100,7 +115,10 @@
         </ul>
       </div>
       <div class="">
-        <p>Copyright Sophia Chia 2019-2020</p>
+        <p class="copyright">Copyright Sophia Chia 2019-2020</p>
+      </div>
+      <div class="block4">
+
       </div>
     </div>
   </footer>
