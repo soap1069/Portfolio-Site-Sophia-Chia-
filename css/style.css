@@ -33,10 +33,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.8em;
   letter-spacing: 2px;
   font-weight: 800;
-  line-height: 40px;
+  line-height: 60px;
   margin: 0;
 }
 
@@ -83,17 +83,15 @@ img {
 }
 
 a {
-  color: #000000;
+  color: #303C6C;
 }
 
 a:visited {
   color: #303C6C;
-  text-decoration: none;
 }
 
 a:hover a:focus {
   color: #B4DFE5;
-  text-decoration: none;
 }
 
 
@@ -113,14 +111,16 @@ a:active {
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  transition: 0.2s opacity;
   text-decoration: none;
   margin: 20px 0;
+  transition: 0.2s opacity;
 }
+
 .button:visited {
   color: #ffffff;
-  /* Reduces the opacity of the button to 80% */
+
 }
+
 .button:hover {
   opacity: 0.8;
   color: #ffffff;
@@ -134,8 +134,11 @@ a:active {
 }
 
 #work .row {
-  margin: 25px 0;
-  padding-bottom: 25px;
+  margin: 60px 0;
+  padding-bottom: 40px;
+}
+
+.row.line {
   border-bottom: 1px solid #4a4a4a;
 }
 
@@ -153,7 +156,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 13px;
   text-transform: uppercase;
   font-weight: 700;
   color: #303C6C;
@@ -161,32 +164,21 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:visited {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
   color: #303C6C;
-  text-decoration: none;
 }
 
 nav > ul > li > a:hover{
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
   color: #B4DFE5;
   opacity: 0.8;
-  text-decoration: none;
 }
+
 nav > ul > li > a:active{
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
   color: #B4DFE5;
   opacity: 0.8;
-  text-decoration: none;
 }
 
 #hero {
-  padding: 20px 0;
+  padding: 80px 0;
   display: inline-block;
   width: 100%;
 }
@@ -228,6 +220,7 @@ main {
   color: #000000;
 }
 
+
 /* about page */
 
 #about h1 {
@@ -254,6 +247,15 @@ main {
   padding-bottom: 20px;
 }
 
+.story {
+  padding: 30px 0;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.skillstools {
+  padding: 30px 0;
+}
+
 /* hunt page */
 
 #project-title h1 {
@@ -276,7 +278,7 @@ main {
 }
 
 .centerimgmaxwidth {
-  max-width: 340px;
+  max-width: 100%;
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -284,4 +286,235 @@ main {
 
 .video {
   margin: 20px 0;
+  width: 100%;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+   width: auto;
+   float: right;
+ }
+
+.logo {
+  margin-top: 15px;
+}
+
+#hero span {
+  display: block;
+}
+
+#hero {
+  text-align: center;
+}
+
+body {
+  font-size: 18px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.projecttext {
+  margin-top: 85px;
+}
+
+
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+   width: auto;
+   float: right;
+ }
+
+ .logo {
+   margin-top: 20px;
+ }
+
+ #hero span {
+   display: block;
+ }
+
+ #hero {
+   text-align: center;
+ }
+
+ body {
+   font-size: 18px;
+ }
+
+.col-lg-7 {
+  width: 58.33%;
+}
+
+.col-lg-5 {
+  width: 41.66%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.projecttext {
+  margin-top: 75px;
+}
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+   width: auto;
+   float: right;
+ }
+
+ .logo {
+   margin-top: 28px;
+ }
+
+ #hero span {
+   display: block;
+ }
+
+ #hero {
+   text-align: center;
+   padding: 100px;
+ }
+
+ #hero h1 {
+   line-height: 80px;
+ }
+
+ body {
+   font-size: 24px;
+ }
+
+ .col-xl-8 {
+   width: 66.66%;
+ }
+
+ .col-xl-4 {
+   width: 33.33%;
+ }
+
+ [class*="col-"] {
+   float: left;
+ }
+
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+
+ .projecttext {
+   margin-top: 30px;
+ }
+
+ .container {
+   max-width: 900px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+
+ /* Brackets go out */
+ .brackets a:before, .brackets a:after
+ {
+     opacity: 0;
+     font-size: 25px;
+     top: 0px;
+     transition: all 0.3s;
+ }
+
+ .brackets a:before
+ {
+     content: '( ';
+     left: 0px;
+     transform: translateX(10px);
+ }
+
+ .brackets a:after
+ {
+     content: ' )';
+     right: 0px;
+     transform: translateX(-10px);
+ }
+
+ .brackets a:hover:before, .brackets a:hover:after
+ {
+     opacity: 1;
+     transform: translateX(0px);
+ }
+
+
+}
+
+
+@keyframes leaves-move {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(25deg);}
+}
+
+#leaves1 {
+  animation: 4s leaves-move infinite alternate ease;
+}
+
+
+@keyframes leaf-move {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-0.8deg);}
+}
+
+#leaf_2 {
+    animation: 3s leaf-move infinite alternate linear;
 }
