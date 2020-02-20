@@ -14,7 +14,6 @@ body {
 header {
   background-color: #FBE8A6;
   padding: 20px 0 0 0;
-  text-align: center;
   box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.5);
   position: fixed;
   display: inline-block;
@@ -158,10 +157,7 @@ a:active {
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 1em 0;
 }
 
 nav > ul > li > a {
@@ -184,6 +180,27 @@ nav > ul > li > a:hover{
 nav > ul > li > a:active{
   color: #F4976C;
   opacity: 0.8;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+  padding-top: 2px;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 10px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 
 #hero {
@@ -320,6 +337,18 @@ header {
 nav {
    width: auto;
    float: right;
+ }
+
+ nav > ul > li {
+   display: inline-block;
+ }
+
+ .navtoggle li:not(:last-child) {
+   display: inline-block;
+ }
+
+ .navtoggle li:last-child {
+   display: none;
  }
 
 .logo {

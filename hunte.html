@@ -16,6 +16,7 @@
 
   <header>
     <div class="container">
+       <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
         <img class="logo" src="img/sophia-chia-logo.svg" alt="Sophia-Chia-logo">
       </a>
@@ -23,12 +24,14 @@
         <ul class="nav">
           <li class="brackets"><a href="index.html">Work</a></li>
           <li class="brackets"><a href="about.html">About</a></li>
-          <li class="brackets"><a href="#contact">Contact</a></li>
+          <li class="brackets"><a href="#contact" onclick="menuToggle()" >Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+      </div>
     </div>
   </header>
-  
+
   <main>
     <div id="project-title">
       <!-- open HUNTE title (orange)section-->
@@ -397,6 +400,11 @@
       </div>
     </div>
   </footer>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
